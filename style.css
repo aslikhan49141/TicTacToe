@@ -13,8 +13,26 @@ body {
     text-align: center;
 }
 
-h1 {
+h1 { margin-bottom: 20px; }
+
+/* Mode Selection Styling */
+.mode-selection {
     margin-bottom: 20px;
+    background: #34495e;
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.mode-selection label {
+    margin: 0 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.mode-selection input {
+    margin-right: 5px;
+    cursor: pointer;
 }
 
 #status {
@@ -42,18 +60,9 @@ h1 {
     transition: background-color 0.3s;
 }
 
-.cell:hover {
-    background-color: #465f76;
-}
-
-/* Colors for X and O */
-.cell.X {
-    color: #e74c3c; /* Red */
-}
-
-.cell.O {
-    color: #3498db; /* Blue */
-}
+.cell:hover { background-color: #465f76; }
+.cell.X { color: #e74c3c; }
+.cell.O { color: #3498db; }
 
 #restartBtn {
     margin-top: 25px;
@@ -65,7 +74,4 @@ h1 {
     cursor: pointer;
     border-radius: 5px;
 }
-
-#restartBtn:hover {
-    background-color: #2ecc71;
-}
+#restartBtn:hover { background-color: #2ecc71; }

@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic-Tac-Toe</title>
+    <title>Tic-Tac-Toe Ultimate</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="container">
         <h1>Tic Tac Toe</h1>
+
+        <div class="mode-selection">
+            <label>
+                <input type="radio" name="mode" value="pvp" id="pvp"> 2 Players
+            </label>
+            <label>
+                <input type="radio" name="mode" value="ai" id="ai" checked> vs Computer
+            </label>
+        </div>
+
         <div id="status">Player X's Turn</div>
         
         <div class="game-board">
